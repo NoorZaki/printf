@@ -1,6 +1,6 @@
 #include "main.h"
 
-/****************** PRINT POINTER ******************/
+/* PRINT POINTER */
 /**
  * print_pointer - Prints the value of a pointer variable
  * @types: List a of arguments
@@ -47,12 +47,11 @@ extra_c = ' ', length++;
 
 ind++;
 
-/*return (write(1, &buffer[i], BUFF_SIZE - i - 1));*/
 return (write_pointer(buffer, ind, length,
 width, flags, padd, extra_c, padd_start));
 }
 
-/************************* PRINT NON PRINTABLE *************************/
+/* PRINT NON PRINTABLE */
 /**
  * print_non_printable - Prints ascii codes in hexa of non printable chars
  * @types: Lista of arguments
@@ -141,7 +140,7 @@ return (count);
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get width
+ * @width: get width input
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Numbers of chars printed
